@@ -23,7 +23,7 @@ python serve.py
 
 ## 在线网站
 
-GitHub Pages 部署地址：<https://kalsook041.github.io/P5R_UI/>。推送到 `main` 后，GitHub Actions 会把 `dist/` 发布到 Pages；也可以在仓库的 Actions 页面手动运行 `Deploy to GitHub Pages`。
+GitHub Pages 部署地址：<https://kalsook041.github.io/P5R_UI/>。更新 `dist/` 并推送到 `main` 后，GitHub Actions 会把它发布到 Pages；也可以在仓库的 Actions 页面手动运行 `Deploy to GitHub Pages`。
 
 ## 组件
 
@@ -37,6 +37,9 @@ GitHub Pages 部署地址：<https://kalsook041.github.io/P5R_UI/>。推送到 `
 | 撕裂式切入 | 原创风格扩展 | 标题、副标题、字号、倾角、裂片间距 |
 | 星芒转场 | 原创风格扩展 | 文字、字号、星芒数量、倾角 |
 | 能力数值条 | 原创风格扩展 | 面板标题、能力名称、5 项数值、字号 |
+| 日期与天气 | 原资源组合重绘 | 月份、日期、星期、时段、天气、天气警报、缩放 |
+| 尖角对白 | 按原三角网格重绘，文字与动效为网页重组 | 角色名、对白、网格、字号、逐字速度、演示入场、缩放 |
+| TAKE YOUR TIME | 原加载画面重绘；摆动与爱心轨迹为演示效果 | 人物状态、循环周期、爱心数量、摆动幅度、说明文字、缩放 |
 
 所有组件支持暂停、重播、0.25×—2× 速度与预览背景切换；文字适配与原创组件支持强调色。当前浏览器保存每个效果和模式的参数；重置仅影响当前效果/模式。菜单支持鼠标、触屏和方向键 / Home / End；`/` 聚焦搜索。
 
@@ -44,7 +47,7 @@ GitHub Pages 部署地址：<https://kalsook041.github.io/P5R_UI/>。推送到 `
 
 “完整示例”含 HTML、CSS、JS、当前参数和 MIT 许可，可以保存成 `.html` 文件直接运行。HTML / CSS / JS 标签可单独复制对应片段；单独片段需组合使用，JS 放在元素之后。剪贴板写入失败时提供可手动选择复制的文本框。
 
-下载文件无需网络、服务器或额外游戏资源文件。`dist/examples/` 提供 8 个文字适配/原创示例及 `original-title.html`、`original-pause.html` 两个原版复刻。预览和导出由同一个生成器产生；浅色/深色背景按钮是预览工具，独立导出默认使用场景。
+下载文件无需网络、服务器或额外游戏资源文件。`dist/examples/` 提供 11 个效果示例及 `original-title.html`、`original-pause.html` 两个原版复刻示例。预览和导出由同一个生成器产生；浅色/深色背景按钮是预览工具，独立导出默认使用场景。
 
 独立示例采用整页样式。多个效果嵌入同一业务页面时，建议使用 iframe 隔离，或自行为样式和 DOM 查询添加作用域。
 

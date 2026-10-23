@@ -16,13 +16,13 @@
 
 Latest correction: user rejected v1 as unlike original. Replaced the generic shell with cut-paper composition and original command-scene artwork. Added original (default) / editable modes to title and pause. Original mode embeds the accepted renderer, measurements, sprites, compositing and background; custom text stays in the explicitly labeled adapted mode. Game assets retain original rights; do not claim they are MIT. Revision implemented and verified; visual acceptance remains subject to user feedback. See ROYAL_REVISION.md. Original archives remain untouched.
 
-Goal: build a P5R-inspired open-source UI playground from the existing reverse-engineering research.
+Goal: build a P5R-inspired open-source UI playground from the existing reverse-engineering research. The catalog contains eight primary UI effects plus three original-resource demonstrations.
 
 Acceptance: eight distinct usable effects; editable text, color and numeric controls; exact standalone HTML/CSS/JS export and copying; pause/replay/speed; filtering; responsive and keyboard-accessible UI; browser verification of interactions and exports.
 
 Decisions: buildless ES modules in dist/, no third-party runtime dependencies. Native title and pause use original game images retained from the local research; editable versions use generated web graphics. Code MIT and game asset rights are separate. Existing accepted archives remain untouched. GitHub Pages publishes dist/ from the public P5R_UI repository, as requested.
 
-Completed: eight effects, editable text/numeric/color controls, filtering, local persistence, same-generator sandboxed previews and standalone exports, copy/download, pause/replay/speed, adaptive fixed-height canvas and keyboard controls. Sources and MIT license included; 8 default HTML examples generated. Known source: title V3 runtime.json (1.05 s fitted period, four harmonics), place-motion.mjs ENTER/EXIT tracks (75/55 ms). These are fitted observations, not recovered engine constants.
+Completed: eight primary effects plus three original-resource demonstrations, editable text/numeric/color controls, filtering, local persistence, same-generator sandboxed previews and standalone exports, copy/download, pause/replay/speed, adaptive fixed-height canvas and keyboard controls. Sources and MIT license included; 11 effect examples and two original title/pause examples generated. Known source: title V3 runtime.json (1.05 s fitted period, four harmonics), place-motion.mjs ENTER/EXIT tracks (75/55 ms). These are fitted observations, not recovered engine constants.
 
 Verification: 9 node tests and syntax checks pass. V2 original title/pause interaction and standalone exports checked in Chromium at desktop and 390×844. Original clipboard and title download exactly match the generator; independent original exports run and accept selection/keys. Archive hash unchanged. V1 eight-effect regression record remains in VERIFICATION.md; current revision evidence is ROYAL_REVISION.md and evidence/royal-*.
 
