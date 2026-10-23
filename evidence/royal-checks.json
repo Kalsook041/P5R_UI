@@ -1,0 +1,57 @@
+{
+  "effects": [
+    {
+      "id": "title",
+      "client": 1425,
+      "original": "true",
+      "width": 1425
+    },
+    {
+      "id": "pause",
+      "client": 1425,
+      "original": "true",
+      "width": 1425
+    },
+    {
+      "id": "place",
+      "client": 1425,
+      "original": "false",
+      "width": 1425
+    },
+    {
+      "id": "dialogue",
+      "client": 1425,
+      "original": "false",
+      "width": 1425
+    },
+    {
+      "id": "card",
+      "client": 1425,
+      "original": "false",
+      "width": 1425
+    },
+    {
+      "id": "cutin",
+      "client": 1425,
+      "original": "false",
+      "width": 1425
+    },
+    {
+      "id": "transition",
+      "client": 1425,
+      "original": "false",
+      "width": 1425
+    },
+    {
+      "id": "stats",
+      "client": 1425,
+      "original": "false",
+      "width": 1425
+    }
+  ],
+  "errors": [],
+  "download": "C:\\Users\\26822\\Downloads\\phantom-ui-title (3).html",
+  "standaloneTitle": "CONFIG",
+  "standalonePause": "System",
+  "mobileWidth": 390
+}

@@ -1,0 +1,132 @@
+{
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "effects": [
+      {
+        "id": "title",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "pause",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "place",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "dialogue",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "card",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "cutin",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "transition",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      },
+      {
+        "id": "stats",
+        "height": 360,
+        "viewportHeight": 360,
+        "width": 315
+      }
+    ]
+  },
+  "desktop": {
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "effects": [
+      {
+        "id": "title",
+        "height": 340,
+        "text": "NEW GAMELOAD GAMEMY PALACECONFIG",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "pause",
+        "height": 340,
+        "text": "SKILLITEMEQUIPPERSONACONFIDANT",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "place",
+        "height": 340,
+        "text": "秀尽学园涩谷四轩茶屋新宿秋叶原",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "dialogue",
+        "height": 340,
+        "text": "MORGANA好戏现在才▼",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "card",
+        "height": 340,
+        "text": "✦致 每一个不甘平凡的你TAKE YOUR HEART虚伪的面具，就由我们揭下。\n你的心，我们收下了。— THE PHANTOM THIEVES —",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "cutin",
+        "height": 340,
+        "text": "SHOWTIME!LET THE REBELLION BEGIN",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "transition",
+        "height": 340,
+        "text": "MISSION STARTTHE NEXT CHAPTER IS YOURS.",
+        "viewportHeight": 340,
+        "width": 815
+      },
+      {
+        "id": "stats",
+        "height": 340,
+        "text": "PHANTOM STATUSKNOWLEDGE80GUTS65PROFICIENCY92KINDNESS48CHARM72",
+        "viewportHeight": 340,
+        "width": 815
+      }
+    ],
+    "errors": []
+  },
+  "clipboard": {
+    "characters": 28400,
+    "MIT": true
+  },
+  "download": "C:\\Users\\26822\\Downloads\\phantom-ui-title (2).html",
+  "standalone": {
+    "selection": "MY PALACE",
+    "errors": []
+  }
+}

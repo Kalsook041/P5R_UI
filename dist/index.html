@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ed123b">
+  <meta name="description" content="P5R 风格开源 UI 实验室。调整参数、实时预览、一键复制独立 HTML / CSS / JavaScript。">
+  <title>PHANTOM UI — 怪盗界面实验室</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./royal.css">
+</head>
+<body>
+<a href="#playground" class="skip">跳到效果实验室</a>
+<header class="site-header">
+  <a class="brand" href="#" aria-label="PHANTOM UI 首页"><svg viewBox="0 0 64 48" aria-hidden="true"><path fill="currentColor" d="M3 6 23 15 32 2 42 15 61 6 53 35 39 43 32 32 25 43 10 35Z"/><path fill="#121214" d="m10 17 17 7-6 8-9-4Zm44 0-17 7 6 8 9-4Z"/></svg><span>PHANTOM<span class="brand-ui">UI</span><small>怪盗界面实验室</small></span></a>
+  <nav class="top-nav" aria-label="主导航"><a href="#playground" class="current">效果实验室 <span data-effect-total>11</span></a><button id="guideButton">使用指南 ↗</button><button id="sourceButton">关于项目 ↗</button></nav>
+  <a class="header-badge" href="./LICENSE" target="_blank" rel="noopener"><span class="status-dot"></span> OPEN SOURCE / MIT</a>
+</header>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-text"><div class="eyebrow">PERSONA 5 ROYAL / INTERFACE ARCHIVE</div><h1 id="heroTitle" aria-label="P5R UI Lab"><span class="ransom-word" aria-hidden="true"><b>P</b><b>5</b><b>R</b></span><span class="ransom-word ransom-lab" aria-hidden="true"><b>U</b><b>i</b><b>L</b><b>A</b><b>B</b></span></h1><div class="hero-bottom"><p class="hero-paper">界面研究室<span>原版复刻 / 自由改造 / 实时预览</span></p><a href="#playground" class="hero-link" aria-label="进入效果实验室">COMMAND SELECT <span>↘</span></a></div></div>
+  <div class="hero-art" aria-hidden="true"><img src="./art/command.jpg" alt=""><span class="hero-art-caption">TAKE YOUR UI.</span></div>
+</section>
+<div class="ticker" aria-hidden="true"><span>★ COMMAND SELECT</span><span>ORIGINAL SPRITES / MEASURED MOTION</span><span>★ COPY THE CODE</span><span>MAKE YOUR OWN PERSONA</span></div>
+
+<main id="playground">
+  <div class="section-heading"><div><span class="section-kicker">THE COLLECTION / 001—011</span><h2>效果实验室<span>UI PLAYGROUND</span></h2></div><p><span class="live-dot"></span> 不止于看，动手改。</p></div>
+  <div class="workspace">
+    <aside class="library" aria-label="效果目录"><div class="library-heading">你的下一件装备<span id="resultCount">08</span></div><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索效果…" aria-label="搜索效果"><kbd>/</kbd></div><div class="filters" aria-label="筛选分类"><button data-filter="全部" class="active" aria-pressed="true">全部</button><button data-filter="导航" aria-pressed="false">导航</button><button data-filter="信息" aria-pressed="false">信息</button><button data-filter="动效" aria-pressed="false">动效</button></div><div id="effectList" class="effect-list"></div><div class="library-note"><span>✳</span><p>每个效果，独立出场。<br><small>纯原生代码 · 零运行依赖</small></p></div></aside>
+
+    <section class="editor" aria-labelledby="effectName">
+      <div class="effect-heading"><div><span class="effect-number" id="effectNumber">01 / 08</span><h3 id="effectName">标题菜单</h3><span id="effectEn" class="effect-en">TITLE MENU</span></div><span class="effect-license">&lt;/&gt; HTML + CSS + JS</span></div>
+      <div class="mode-bar" id="modeBar"><div><button data-mode="original" class="active" aria-pressed="true">原版复刻</button><button data-mode="editable" aria-pressed="false">文字适配</button></div><span id="modeExplanation">原版字形 / 原版衬底 / 原曲线</span></div>
+      <div class="preview-shell"><div class="preview-top"><span><i></i> LIVE PREVIEW</span><div class="backgrounds" aria-label="预览背景"><button id="darkBg" class="active" aria-label="深色背景" aria-pressed="true"></button><button id="lightBg" aria-label="浅色背景" aria-pressed="false"></button></div></div><iframe id="preview" title="标题菜单实时预览" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe><div class="preview-bottom"><span id="previewHint">悬停 / 点击菜单</span><span class="preview-cross" aria-hidden="true">＋</span></div></div>
+      <div class="transport"><div><button id="pauseButton" class="transport-button" aria-pressed="false"><span id="pauseIcon">Ⅱ</span><span id="pauseLabel">暂停</span></button><button id="replayButton" class="transport-button"><span>↻</span> 重播</button><label class="speed-label" for="speed">速度 <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label></div><span class="transport-note">A SELECT　B BACK</span></div>
+      <section class="code-section" aria-label="组件代码"><div class="code-toolbar"><div class="code-tabs" role="tablist" aria-label="代码格式"><button id="tab-full" role="tab" data-tab="full" aria-selected="true" aria-controls="codePanel" class="active">完整示例</button><button id="tab-html" role="tab" data-tab="html" aria-selected="false" aria-controls="codePanel" tabindex="-1">HTML</button><button id="tab-css" role="tab" data-tab="css" aria-selected="false" aria-controls="codePanel" tabindex="-1">CSS</button><button id="tab-js" role="tab" data-tab="js" aria-selected="false" aria-controls="codePanel" tabindex="-1">JS</button></div><button id="copyTab" class="copy-tab">⧉ <span>复制代码</span></button></div><div id="codePanel" role="tabpanel" aria-labelledby="tab-full" tabindex="0"><pre><code id="code"></code></pre></div><div class="code-footer"><span id="codeMeta">独立 HTML · 无需安装依赖</span><span>MIT LICENSE ↗</span></div></section>
+    </section>
+
+    <aside class="inspector" aria-label="效果参数"><div class="inspector-heading"><div><span class="section-kicker">CUSTOMIZE IT</span><h3>改成你的风格</h3></div><button id="resetButton" title="恢复当前效果默认值" aria-label="恢复默认参数">↺</button></div><p class="inspector-intro">每一点改动，立刻发生。</p><div class="inspector-section-label">01 / 内容 &amp; 形态</div><div id="controls"></div><div class="inspector-section-label color-label">02 / 主题色</div><div class="color-control"><label for="accent">强调色</label><div><input id="accent" type="color" value="#ed123b"><span id="accentHex">#ED123B</span></div></div><div class="swatches" aria-label="预设强调色"><button data-color="#ed123b" style="--swatch:#ed123b" aria-label="怪盗红" class="active"></button><button data-color="#20d9cf" style="--swatch:#20d9cf" aria-label="荧光青"></button><button data-color="#eabb42" style="--swatch:#eabb42" aria-label="皇家金"></button><button data-color="#7865df" style="--swatch:#7865df" aria-label="电光紫"></button><button data-color="#f3eee2" style="--swatch:#f3eee2" aria-label="纸张白"></button></div><button id="copyFull" class="primary-button"><span>⧉</span> 复制完整代码 <span>↗</span></button><button id="downloadButton" class="download-button">↓ 下载独立 HTML</button><div class="source-note"><span class="source-label" id="sourceLabel">研究转译</span><p id="sourceDescription"></p><button id="effectSource">查看实现说明 ↗</button></div></aside>
+  </div>
+  <div class="collection-footer"><span><b data-effect-total>11</b> PIECES OF REBELLION</span><p>原资源、网格和动效证据，逐项拆解。<br>为创作者重新构建，用代码继续创作。</p><span class="footer-star" aria-hidden="true">✦</span></div>
+</main>
+<footer class="site-footer"><span>PHANTOM UI <i>© 2026</i></span><span>FAN-MADE. CODE-READY. <a href="./LICENSE" target="_blank" rel="noopener">MIT LICENSE ↗</a></span></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="infoDialog"><div class="dialog-top"><span>PHANTOM UI / FIELD NOTES</span><button id="closeDialog" aria-label="关闭">✕</button></div><div id="dialogBody"></div></dialog>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

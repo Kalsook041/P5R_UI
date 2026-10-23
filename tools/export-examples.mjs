@@ -1,0 +1,10 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+import {effects,defaults,generate} from '../dist/effects.js';
+import {originalEffects,generateOriginal} from '../dist/originals.js';
+import {resourceEffects,generateResource} from '../dist/resource-ui.js';
+const target=new URL('../dist/examples/',import.meta.url);
+await mkdir(target,{recursive:true});
+for(const effect of effects)await writeFile(new URL(effect.id+'.html',target),generate(effect,defaults(effect)).full,'utf8');
+for(const [id,schema]of Object.entries(originalEffects))await writeFile(new URL('original-'+id+'.html',target),generateOriginal(effects.find(e=>e.id===id),defaults(schema)).full,'utf8');
+for(const effect of resourceEffects)await writeFile(new URL(effect.id+'.html',target),generateResource(effect,defaults(effect)).full,'utf8');
+console.log('Exported 11 component examples + 2 original reconstruction variants.');
